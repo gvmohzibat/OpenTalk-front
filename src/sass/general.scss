@@ -1,0 +1,28 @@
+body {
+  background: #f4f7fb;
+}
+.container {
+  padding-top: 90px;
+  padding-bottom: 20px;
+}
+.no-padding {
+  padding: 0 !important;
+}
+
+.list-item {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 12px 30px -15px hsla(214, 40%, 80%, 0.6), 0 3px 30px rgba(0, 0, 0, 0.04);
+  .item-title {
+    border-bottom: 2px dashed #ddd;
+    padding-bottom: 15px;
+    text-align: center;
+    color: #777;
+    margin-bottom: 20px;
+    background: #f9f9f9;
+    padding-top: 15px;
+  }
+}
+.post-list-item {
+  @extend .list-item;
+}

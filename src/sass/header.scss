@@ -1,0 +1,17 @@
+$headerHeight: 90px;
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  //   padding: 20px;
+  box-shadow: 0 -7px 30px rgba(0, 0, 0, 0.1);
+  height: $headerHeight;
+}
+
+.nav-link {
+  height: $headerHeight;
+  line-height: $headerHeight;
+  padding: 0 1rem;
+}
