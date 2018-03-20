@@ -41,7 +41,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { NewPostComponent } from './views/new-post/new-post.component';
 import { PostsListComponent } from './views/posts-list/posts-list.component';
 import { SinglePostComponent } from './views/single-post/single-post.component';
-import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
 import { ForgotPasswordComponent } from './views/forgot-password/forgot-password.component';
 import { AdminComponent } from './views/admin/admin.component';
 
@@ -129,8 +128,6 @@ export const appRoutes: Routes = [
     RestangularModule.forRoot([AuthService], RestangularConfigFactory),
     RouterModule.forRoot(appRoutes),
     SimpleNotificationsModule.forRoot(),
-    FroalaEditorModule.forRoot(),
-    FroalaViewModule.forRoot()
   ],
   providers: [UtilityService, ConstantsService, SignupService, AuthService, AllServicesService, CookieService],
   bootstrap: [AppComponent]
